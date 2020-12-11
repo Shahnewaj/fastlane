@@ -1,18 +1,16 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, SafeAreaView} from 'react-native';
 import codePush from 'react-native-code-push';
+import LoginScreen from './src/screen/LoginScreen';
 
 const App = () => {
   return (
     <>
-      <View>
-        <Text>Code push test 2</Text>
-        <Text>Code push test 2</Text>
-        <Text>Code push test 2</Text>
-        <Text>Code push test 2</Text>
-        <Text>Code push test 2</Text>
-        <Text>Code push test 2</Text>
-      </View>
+      <SafeAreaView>
+        <View>
+          <LoginScreen />
+        </View>
+      </SafeAreaView>
     </>
   );
 };
